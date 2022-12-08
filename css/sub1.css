@@ -6,7 +6,7 @@ a {
 }
 
 /* 768px~ */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   #wrap {
     max-width: 768px;
     margin: 0 auto;
@@ -41,7 +41,7 @@ a {
   }
   .content2 {
     width: 100%;
-    height: 2800px;
+    height: 2000px;
     margin-top: 194px;
   }
   .content3 {
@@ -66,12 +66,10 @@ a {
   }
   .banner > div {
     margin: 0 auto;
-    padding: 0 60px;
   }
   .banner > div > img {
-    margin-top: 90px;
     width: 100%;
-    height: 100%;
+    height: 550px;
     background-size: cover;
   }
   .banner > p {
@@ -93,12 +91,12 @@ a {
 
   /* header */
   .header_inner > h1 {
-    width: 52px;
-    height: 28px;
+    width: 40px;
+    height: 20px;
     text-indent: -9999px;
     overflow: hidden;
-    background: url(../images/News/header-nc-icon.png) no-repeat 50% 50%;
-    background-size: 52px 28px;
+    background: url(../images/Play/header-nc-icon-dark.png) no-repeat 50% 50%;
+    background-size: 40px 20px;
   }
   .gnb > ul {
     position: absolute;
@@ -138,13 +136,13 @@ a {
     position: absolute;
     top: 27px;
     right: 40px;
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     margin-right: 25px;
-    background: url(../images/News/search-ic-search.png) no-repeat 50% 50%;
+    background: url(../images/Play/search-ic-search-dark.png) no-repeat 50% 50%;
     text-indent: -9999px;
     overflow: hidden;
-    background-size: 28px 28px;
+    background-size: 20px 20px;
   }
 
   /* 검색박스 */
@@ -243,10 +241,10 @@ a {
     position: absolute;
     right: 20px;
     top: 27px;
-    width: 28px;
-    height: 28px;
-    background: url(../images/News/header-menu-icon.png) no-repeat 50% 50%;
-    background-size: 28px 28px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/Play/header-menu-icon-dark.png) no-repeat 50% 50%;
+    background-size: 20px 20px;
     text-indent: -9999px;
     overflow: hidden;
     transition: all 0.5s linear 0s;
@@ -326,9 +324,9 @@ a {
   }
 
   .content1 > h3 {
-    font-size: 27px;
+    font-size: 20px;
     color: #1e1e1e;
-    margin-bottom: 58px;
+    margin-bottom: 25px;
     font-weight: bold;
   }
   .content1_inner > .cont1_arrow {
@@ -441,7 +439,7 @@ a {
   }
 
   .content2 > h3 {
-    font-size: 27px;
+    font-size: 20px;
     color: #1e1e1e;
     margin-bottom: 58px;
     font-weight: bold;
@@ -458,8 +456,8 @@ a {
     position: relative;
     align-items: center;
     width: 600px;
-    height: 400px;
-    margin-bottom: 40px;
+    height: 300px;
+    margin-bottom: 10px;
     overflow: hidden;
   }
 
@@ -467,20 +465,21 @@ a {
     overflow: hidden;
     display: block;
     width: 100%;
-    height: 300px;
+    height: 220px;
   }
   .article_wrap > article > a > span > img {
     width: 100%;
+    height: 220px;
     background-size: cover;
     transition: all 0.5s linear 0s;
   }
   .article_wrap > article > a > p {
     color: #333333;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .article_wrap > article > a > h4 {
     color: #333333;
-    font-size: 23px;
+    font-size: 15px;
     font-weight: bold;
     opacity: 1;
   }
@@ -514,36 +513,35 @@ a {
   }
   div.content3_inner > ul > li {
     display: flex;
-    padding-right: 102px;
   }
   div.content3_inner > ul > li:nth-of-type(2) {
     position: absolute;
     top: 0;
-    left: 110px;
+    left: 100px;
   }
   div.content3_inner > ul > li:nth-of-type(3) {
     position: absolute;
     top: 0;
-    left: 370px;
+    left: 300px;
   }
   div.content3_inner > ul > li:nth-of-type(4) {
     position: absolute;
-    top: 35px;
+    top: 40px;
     left: 0;
   }
   div.content3_inner > ul > li:nth-of-type(5) {
     position: absolute;
-    top: 35px;
-    left: 250px;
+    top: 40px;
+    left: 200px;
   }
   div.content3_inner > ul > li:nth-of-type(6) {
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 0px;
   }
   div.content3_inner > ul > li:nth-of-type(7) {
     position: absolute;
-    top: 110px;
+    top: 120px;
     left: 0px;
   }
 
@@ -651,19 +649,21 @@ a {
 
   /* cont4 */
   div.content4_inner {
-    content: '';
-    display: block;
-    clear: both;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   div.content4_inner > div {
-    float: left;
-    width: 325px;
-    padding-right: 91px;
-    transition: all 0.5s linear 0s;
+    position: relative;
+    height: 30px;
+    left: 170px;
+    transform: translateX(-50%);
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 100px;
   }
   div.content4_inner > div > a {
     display: block;
-    padding-bottom: 35px;
     font-size: 16px;
     color: #1e1e1e;
     border-bottom: 1px solid #1e1e1e;
@@ -686,20 +686,20 @@ a {
   /* footer #1e1e1e*/
   .footer_inner {
     position: relative;
+    width: 100%;
+    padding: 30px;
   }
   .footer_inner > .foot_banner > .foot_banner_bg {
-    left: 0;
-    width: 500px;
+    width: 90%;
     height: 100px;
     background: url(../images/News/footer-logo.png) no-repeat 50% 50%;
-    background-size: 80%;
+    background-size: 100%;
   }
   .footer_inner > .foot_banner > .foot_video {
     position: absolute;
-    left: 150px;
-    top: -10px;
-    width: 100px;
-    height: 119px;
+    left: 115px;
+    top: 60px;
+    width: 90px;
   }
   .footer_inner > .sns {
     margin-left: 20px;
@@ -766,7 +766,7 @@ a {
 }
 
 /* 1024px~ */
-@media screen and (min-width: 769px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   #wrap {
     min-width: 1024px;
     max-width: 1439px;

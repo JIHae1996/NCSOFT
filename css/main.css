@@ -9,7 +9,7 @@ body {
 }
 
 /* 768px~ */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   body {
     background-color: #000;
   }
@@ -51,9 +51,10 @@ body {
     padding: 0 48px;
   }
   .content3 {
+    width: 100%;
     height: 88px;
     margin-top: 300px;
-    padding: 0 48px;
+    padding: 20px 48px;
   }
   #footer {
     position: relative;
@@ -67,6 +68,7 @@ body {
 
   /* main_visual */
   .main_visual {
+    width: 100vw;
     transform: scale(1);
     transform-origin: center;
   }
@@ -106,18 +108,17 @@ body {
   }
   .banner_bg.on {
     opacity: 1;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
   }
 
   /* header */
   .header_inner > h1 {
-    width: 52px;
-    height: 28px;
+    width: 40px;
+    height: 20px;
     text-indent: -9999px;
     overflow: hidden;
     background: url(../images/Play/header-nc-icon-dark.png) no-repeat 50% 50%;
-    background-size: 52px 28px;
+    background-size: 40px 20px;
   }
   .gnb > ul {
     position: absolute;
@@ -159,13 +160,13 @@ body {
     position: absolute;
     top: 27px;
     right: 40px;
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     margin-right: 25px;
     background: url(../images/Play/search-ic-search-dark.png) no-repeat 50% 50%;
     text-indent: -9999px;
     overflow: hidden;
-    background-size: 28px 28px;
+    background-size: 20px 20px;
   }
 
   /* 검색박스 */
@@ -264,10 +265,10 @@ body {
     position: absolute;
     right: 20px;
     top: 27px;
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     background: url(../images/Play/header-menu-icon-dark.png) no-repeat 50% 50%;
-    background-size: 28px 28px;
+    background-size: 20px 20px;
     text-indent: -9999px;
     overflow: hidden;
     transition: all 0.5s linear 0s;
@@ -347,9 +348,9 @@ body {
   }
 
   .content1_inner > h3 {
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
-    margin-bottom: 58px;
+    margin-bottom: 30px;
   }
   .content1_inner > .cont1_arrow {
     position: absolute;
@@ -383,8 +384,8 @@ body {
   .content1_inner > .article_wrap > article {
     opacity: 1;
     position: relative;
-    width: 300px;
-    height: 550px;
+    width: 200px;
+    height: 300px;
     margin-right: 15px;
   }
   .content1_inner > .article_wrap > article:last-child {
@@ -396,15 +397,15 @@ body {
     display: block;
   }
   .content1_inner > .article_wrap > article > a > span > img {
-    width: 348px;
-    height: 625px;
+    width: 200px;
+    height: 300px;
     background-size: cover;
     transition: all 0.5s linear 0s;
   }
   .content1_inner > .article_wrap > article > a > video {
     display: none;
-    width: 300px;
-    height: 550px;
+    width: 200px;
+    height: 300px;
   }
   .content1_inner > .article_wrap > article > a > h4 {
     z-index: 50;
@@ -413,7 +414,7 @@ body {
     transform: translateX(-50%);
     text-align: center;
     color: #fff;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     opacity: 1;
     transition: all 0.5s linear 0s;
@@ -632,21 +633,23 @@ body {
   /* div.content2_inner.on>.content2_inner_on_bg{ position: absolute; top: 0; left: 0; background-color: #000; width: 100%; height: 100%;} */
 
   /* content3 */
-  div.content3_inner > div::after {
-    content: '';
-    display: block;
-    clear: both;
+
+  div.content3_inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   div.content3_inner > div {
-    float: left;
-    width: 600px;
+    position: relative;
+    left: 130px;
+    transform: translateX(-50%);
+    width: 70%;
     margin: 0 auto;
-    margin-right: 91px;
     margin-bottom: 100px;
   }
   div.content3_inner > div > div a {
     display: block;
-    width: 100%;
+    width: 80%;
     padding-bottom: 30px;
     font-size: 16px;
     color: #fff;
@@ -678,19 +681,20 @@ body {
   /* footer */
   .footer_inner {
     position: relative;
+    width: 100%;
+    padding: 30px;
   }
   .footer_inner > .foot_banner > .foot_banner_bg {
-    width: 600px;
+    width: 50%;
     height: 100px;
     background: url(../images/Play/footer-logo-dark.png) no-repeat 50% 50%;
     background-size: 100%;
   }
   .footer_inner > .foot_banner > .foot_video {
     position: absolute;
-    left: 150px;
-    top: -10px;
-    width: 160px;
-    height: 119px;
+    left: 115px;
+    top: 60px;
+    width: 90px;
   }
   .footer_inner > .sns {
     margin-left: 150px;
@@ -698,8 +702,10 @@ body {
   }
 
   .footer_inner > .sns > ul > li {
+    position: relative;
+    left: -70px;
     display: inline;
-    padding-left: 40px;
+    padding: 10px;
     opacity: 0.2;
     transition: opacity 0.2s linear 0s;
   }
@@ -710,8 +716,8 @@ body {
     height: 22px;
   }
   .footer_inner > address {
-    margin-left: 160px;
-    margin-top: 50px;
+    margin-left: 30px;
+    margin-top: 20px;
     color: #fff;
     font-size: 14px;
   }
@@ -725,7 +731,7 @@ body {
   }
 
   .footer_inner > .copy {
-    margin-left: 150px;
+    margin-left: 20px;
     color: #fff;
     opacity: 0.2;
     font-size: 14px;
@@ -739,6 +745,9 @@ body {
     transform: scale(0.7);
   }
   #footer > .top > a > img {
+    position: relative;
+    top: -300px;
+    left: -130px;
     width: 68px;
     height: 86px;
   }
@@ -756,7 +765,7 @@ body {
 }
 
 /* 1024px~ */
-@media screen and (min-width: 769px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   body {
     background-color: #000;
   }

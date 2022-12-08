@@ -6,7 +6,7 @@ a {
 }
 
 /* 768px~ */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   body {
     background-color: #000;
   }
@@ -48,7 +48,7 @@ a {
   }
   #footer {
     position: relative;
-    padding: 0 48px;
+    padding: 0 20px;
     margin-top: 400px;
     padding-bottom: 45px;
   }
@@ -58,12 +58,12 @@ a {
 
   /* header */
   .header_inner > h1 {
-    width: 52px;
-    height: 28px;
+    width: 40px;
+    height: 20px;
     text-indent: -9999px;
     overflow: hidden;
     background: url(../images/Play/header-nc-icon-dark.png) no-repeat 50% 50%;
-    background-size: 52px 28px;
+    background-size: 40px 20px;
   }
   .gnb > ul {
     position: absolute;
@@ -104,13 +104,13 @@ a {
     position: absolute;
     top: 27px;
     right: 40px;
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     margin-right: 25px;
     background: url(../images/Play/search-ic-search-dark.png) no-repeat 50% 50%;
     text-indent: -9999px;
     overflow: hidden;
-    background-size: 28px 28px;
+    background-size: 20px 20px;
   }
 
   /* 검색박스 */
@@ -209,10 +209,10 @@ a {
     position: absolute;
     right: 20px;
     top: 27px;
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     background: url(../images/Play/header-menu-icon-dark.png) no-repeat 50% 50%;
-    background-size: 28px 28px;
+    background-size: 20px 20px;
     text-indent: -9999px;
     overflow: hidden;
     transition: all 0.5s linear 0s;
@@ -280,9 +280,7 @@ a {
   }
 
   /* content1 */
-  .content1 > .sub_menu > dl {
-    padding: 20px;
-  }
+
   .content1 > .sub_menu > dl > dt {
     width: 100%;
     color: #fff;
@@ -300,9 +298,9 @@ a {
     display: inline;
   }
   .content1 > .sub_menu > dl > dd > a {
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
-    padding: 0 30px;
+    padding: 0 5px;
     text-align: center;
   }
   .content1 > .sub_menu > dl > dd > a:first-child {
@@ -344,7 +342,6 @@ a {
   }
 
   form dd:nth-of-type(2) > input {
-    width: 400px;
     padding-bottom: 12px;
     font-size: 16px;
     background-color: #000;
@@ -393,28 +390,30 @@ a {
   /* footer */
   .footer_inner {
     position: relative;
+    width: 100%;
+    padding: 10px;
   }
   .footer_inner > .foot_banner > .foot_banner_bg {
-    width: 700px;
-    height: 100px;
+    height: 90px;
     background: url(../images/Play/footer-logo-dark.png) no-repeat 50% 50%;
-    background-size: 80%;
+    background-size: 100%;
   }
   .footer_inner > .foot_banner > .foot_video {
     position: absolute;
-    left: 210px;
-    top: -10px;
-    width: 160px;
-    height: 119px;
+    left: 100px;
+    top: 38px;
+    width: 90px;
   }
   .footer_inner > .sns {
-    margin-left: 200px;
+    margin-left: 150px;
     margin-top: 50px;
   }
 
   .footer_inner > .sns > ul > li {
+    position: relative;
+    left: -50px;
     display: inline;
-    padding-left: 40px;
+    padding: 5px;
     opacity: 0.2;
     transition: opacity 0.2s linear 0s;
   }
@@ -425,8 +424,8 @@ a {
     height: 22px;
   }
   .footer_inner > address {
-    margin-left: 200px;
-    margin-top: 50px;
+    margin-left: 40px;
+    margin-top: 20px;
     color: #fff;
     font-size: 14px;
   }
@@ -440,7 +439,7 @@ a {
   }
 
   .footer_inner > .copy {
-    margin-left: 200px;
+    margin-left: 32px;
     color: #fff;
     opacity: 0.2;
     font-size: 14px;
@@ -471,7 +470,7 @@ a {
 }
 
 /* 1024px~ */
-@media screen and (min-width: 769px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   body {
     background-color: #000;
   }
