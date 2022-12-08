@@ -400,9 +400,9 @@ a {
   }
   .footer_inner > .foot_banner > .foot_video {
     position: absolute;
-    left: 100px;
-    top: 38px;
-    width: 90px;
+    left: 120px;
+    top: 30px;
+    width: 120px;
   }
   .footer_inner > .sns {
     margin-left: 150px;
@@ -411,7 +411,6 @@ a {
 
   .footer_inner > .sns > ul > li {
     position: relative;
-    left: -50px;
     display: inline;
     padding: 5px;
     opacity: 0.2;
@@ -424,7 +423,7 @@ a {
     height: 22px;
   }
   .footer_inner > address {
-    margin-left: 40px;
+    margin-left: 70px;
     margin-top: 20px;
     color: #fff;
     font-size: 14px;
@@ -439,7 +438,7 @@ a {
   }
 
   .footer_inner > .copy {
-    margin-left: 32px;
+    margin-left: 70px;
     color: #fff;
     opacity: 0.2;
     font-size: 14px;
